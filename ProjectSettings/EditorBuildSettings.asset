@@ -8,6 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CatanXR.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Passthrough.unity
+    guid: 58e5fc2486c774a4e88ac76261268d52
+  - enabled: 0
+    path: Assets/PassthroughStyles.unity
+    guid: a1a6574991742284e9630c2e8f93648a
+  - enabled: 0
+    path: Assets/PassthroughHands.unity
+    guid: c94e480e4a6da614693c0cd3372e2d2d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2bb6bb5e5ccc5f243b05f3bfd7515756, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 208b29eed59f9d3439db787a64dbaad1, type: 2}
