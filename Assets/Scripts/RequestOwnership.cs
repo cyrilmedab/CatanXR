@@ -17,9 +17,10 @@ public class RequestOwnership : MonoBehaviour
         _realtimeTransform = GetComponent<RealtimeTransform>();
     }
 
-    public void RequestObjectOwnership(SelectEnterEventArgs args)
+    public void RequestObjectOwnership()
     {
         _realtimeView.RequestOwnership();
         _realtimeTransform.RequestOwnership();
     }
+
 }
