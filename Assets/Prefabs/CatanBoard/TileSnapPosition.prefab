@@ -405,7 +405,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5619804448480943301}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -494,11 +494,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06bd28341d3e86a4c8ab52b1a0269c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
+  _interactorFilters:
+  - {fileID: 7020517677465939204}
+  _maxInteractors: 2
+  _maxSelectingInteractors: 1
   _data: {fileID: 0}
-  _rigidbody: {fileID: 0}
+  _rigidbody: {fileID: 6538798658605076675, guid: d5668ab55ede1014199a0ac06f575318, type: 3}
   _snapPoseDelegate: {fileID: 0}
   _movementProvider: {fileID: 0}
 --- !u!114 &8841248522711669678
