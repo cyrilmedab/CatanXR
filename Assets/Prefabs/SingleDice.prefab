@@ -422,6 +422,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6875600646072305}
     - target: {fileID: 873033788400008101, guid: d23cb7f7e115c82418eff141af9386dd, type: 3}
+      propertyPath: _interactableView
+      value: 
+      objectReference: {fileID: 8997008718910346881}
+    - target: {fileID: 873033788400008101, guid: d23cb7f7e115c82418eff141af9386dd, type: 3}
       propertyPath: _whenSelect.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 6875600646072310}
@@ -488,3 +492,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5551093208327203254, guid: d23cb7f7e115c82418eff141af9386dd, type: 3}
   m_PrefabInstance: {fileID: 8551942528804448908}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8997008718910346881 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 753598301148789773, guid: d23cb7f7e115c82418eff141af9386dd, type: 3}
+  m_PrefabInstance: {fileID: 8551942528804448908}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb4a09355f9dc244bfbcd2ac9208ef7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
