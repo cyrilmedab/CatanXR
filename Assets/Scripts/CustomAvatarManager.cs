@@ -8,8 +8,8 @@ public class CustomAvatarManager : MonoBehaviour
 {
     [SerializeField] private GameObject _localAvatarPrefab;
     [SerializeField] private RealtimeAvatar.LocalPlayer _localPlayer;
-    public OVRSkeleton localLeftSkeleton;
-    public OVRSkeleton localRightSkeleton;
+    public OVRCustomSkeleton localLeftSkeleton;
+    public OVRCustomSkeleton localRightSkeleton;
     
     public GameObject LocalAvatarPrefab {
         get { return _localAvatarPrefab; }

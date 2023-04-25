@@ -16,7 +16,7 @@ public class HandSkeletonSerializer : MonoBehaviour
     private SkinnedMeshRenderer _skinnedMeshRenderer;
     private List<Transform> _allBones = new List<Transform>();
 
-    private OVRSkeleton _ovrSkeleton;
+    private OVRCustomSkeleton _ovrSkeleton;
     private IOVRSkeletonDataProvider _ovrSkeletonDataProvider;
 
     private StringBuilder _stringBuilder;
@@ -52,7 +52,7 @@ public class HandSkeletonSerializer : MonoBehaviour
 
     private void LocalUpdate() => _handPoseSync.SendData(SerializeSkeletalData());
 
-    public void AssignLocalSkeleton(OVRSkeleton skeleton)
+    public void AssignLocalSkeleton(OVRCustomSkeleton skeleton)
     {
         _ovrSkeleton = skeleton;
         _ovrSkeletonDataProvider = _ovrSkeleton.GetComponent<IOVRSkeletonDataProvider>();
@@ -72,7 +72,7 @@ public class HandSkeletonSerializer : MonoBehaviour
     private List<Transform> ListOfBoneTransforms(Transform obj)
     {
         List<Transform> bonePositions = new List<Transform>();
-        //List<Transform> tipsOfBones = new List<Transform>();
+        List<Transform> tipsOfBones = new List<Transform>();
         if (obj == null) return bonePositions;
 
         var stack = new Stack<Transform>();
@@ -88,13 +88,12 @@ public class HandSkeletonSerializer : MonoBehaviour
                 var child = curr.GetChild(i);
                 if (child == null) continue;
                 
-                //if (child.name.Contains("_null")) tipsOfBones.Add(child);
-                //else
-                stack.Push(child);
+                if (child.name.Contains("_null")) tipsOfBones.Add(child);
+                else stack.Push(child);
             }
         }
 
-        //bonePositions.AddRange(tipsOfBones);
+        bonePositions.AddRange(tipsOfBones);
         return bonePositions;
     }
 

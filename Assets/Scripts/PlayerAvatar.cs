@@ -32,7 +32,7 @@ public class PlayerAvatar : MonoBehaviour
         MatchTransform(_localRightHand, rightHand.transform);
     }
 
-    public void LinkWithLocal(Transform head, OVRSkeleton left, OVRSkeleton right)
+    public void LinkWithLocal(Transform head, OVRCustomSkeleton left, OVRCustomSkeleton right)
     {
         headRT.RequestOwnership();
         _leftHandRT.RequestOwnership();
